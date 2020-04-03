@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-  <video id="video" width="960" src="master.avi" muted loop controls></video>
+  <video id="video" width="640" src="Hynova-master1.mp4" muted loop controls></video>
   <canvas id="output-canvas" width="960" height="540"></canvas>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
@@ -29,8 +29,8 @@
       ctx_out = c_out.getContext("2d");
 
       c_tmp = document.createElement("canvas");
-      c_tmp.setAttribute("width",960);
-      c_tmp.setAttribute("height",540);
+      c_tmp.setAttribute("width",640);
+      c_tmp.setAttribute("height",360);
       ctx_tmp = c_tmp.getContext("2d");
 
       video.play();
